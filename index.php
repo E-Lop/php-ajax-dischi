@@ -33,7 +33,8 @@ Attraverso un’altra chiamata api, filtrare gli album per genere lato backend. 
                 
                     <?php foreach($database as $singleDisc) { ?>
                         <div class="disc-card">
-                            <img src="<?php echo $singleDisc['poster'] ?>" alt="copertina del disco <?php echo $singleDisc['title'] ?>">
+                            <img src="<?php echo $singleDisc['poster'] ?>" 
+                            alt="copertina del disco <?php echo $singleDisc['title'] ?>">
                             <h2><?php echo $singleDisc['title'] ?></h2>
                             <p class="author"><?php echo $singleDisc['author'] ?></p>
                             <p class="published"><?php echo $singleDisc['year'] ?></p>

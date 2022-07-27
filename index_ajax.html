@@ -24,6 +24,13 @@ Attraverso un’altra chiamata api, filtrare gli album per genere lato backend. 
             alt="logo di spotify"
           />
         </div>
+        <select v-model="userGenre" @change="getDiscsFromApi">
+          <option value="all">All</option>
+          <option value="Rock">Rock</option>
+          <option value="Pop">Pop</option>
+          <option value="Jazz">Jazz</option>
+          <option value="Metal">Metal</option>
+        </select>
       </header>
 
       <!-- MAIN -->
